@@ -5175,6 +5175,7 @@ class Mission
 					flags=3;
 					class Attributes
 					{
+						description="Squad Leader @Echo";
 						isPlayable=1;
 					};
 					id=1548;
@@ -5235,6 +5236,7 @@ class Mission
 					flags=1;
 					class Attributes
 					{
+						description="JTAC";
 						isPlayable=1;
 					};
 					id=1549;
@@ -5271,6 +5273,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
+						description="Medic";
 						isPlayable=1;
 					};
 					id=1551;
@@ -5303,6 +5306,7 @@ class Mission
 					flags=3;
 					class Attributes
 					{
+						description="Team Leader @Echo 1";
 						isPlayable=1;
 					};
 					id=1552;
@@ -5321,6 +5325,7 @@ class Mission
 					flags=1;
 					class Attributes
 					{
+						description="MG";
 						isPlayable=1;
 					};
 					id=1556;
@@ -5339,6 +5344,7 @@ class Mission
 					flags=1;
 					class Attributes
 					{
+						description="MGA";
 						isPlayable=1;
 					};
 					id=1557;
@@ -5357,6 +5363,7 @@ class Mission
 					flags=1;
 					class Attributes
 					{
+						description="LAT";
 						isPlayable=1;
 					};
 					id=1558;
@@ -5389,6 +5396,7 @@ class Mission
 					flags=3;
 					class Attributes
 					{
+						description="Team Leader @Echo 2";
 						isPlayable=1;
 					};
 					id=1559;
@@ -5407,6 +5415,7 @@ class Mission
 					flags=1;
 					class Attributes
 					{
+						description="Grenadier";
 						isPlayable=1;
 					};
 					id=1561;
@@ -5424,6 +5433,7 @@ class Mission
 					side="West";
 					class Attributes
 					{
+						description="Explosiv Expert";
 						isPlayable=1;
 					};
 					id=1682;
@@ -5483,6 +5493,7 @@ class Mission
 					side="West";
 					class Attributes
 					{
+						description="Engineer";
 						isPlayable=1;
 					};
 					id=1715;
@@ -5556,6 +5567,7 @@ class Mission
 					side="West";
 					class Attributes
 					{
+						description="Sniper @Sierra";
 						isPlayable=1;
 					};
 					id=1718;
@@ -5616,6 +5628,7 @@ class Mission
 					flags=2;
 					class Attributes
 					{
+						description="Spotter";
 						isPlayable=1;
 					};
 					id=1719;
@@ -5690,6 +5703,7 @@ class Mission
 					flags=3;
 					class Attributes
 					{
+						description="Pilot @Hotel 1";
 						isPlayable=1;
 					};
 					id=1571;
@@ -5749,6 +5763,7 @@ class Mission
 					flags=1;
 					class Attributes
 					{
+						description="Co-Pilot";
 						isPlayable=1;
 					};
 					id=1572;
@@ -5781,6 +5796,7 @@ class Mission
 					flags=3;
 					class Attributes
 					{
+						description="Pilot @Hotel 2";
 						isPlayable=1;
 					};
 					id=1574;
@@ -5798,6 +5814,7 @@ class Mission
 					flags=1;
 					class Attributes
 					{
+						description="Co-Piot";
 						isPlayable=1;
 					};
 					id=1575;
