@@ -17,8 +17,10 @@
 *
 */
 
+#define LASERS
+#define SUPPRESSORS
 
-loadoutFactionBlu = "";
+loadoutFactionBlu = "SOGBLACK";
 loadoutFactionOpf = "";
 loadoutFactionInd = "";
 

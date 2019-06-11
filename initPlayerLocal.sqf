@@ -8,10 +8,14 @@ grad_template_ratingEH = player addEventHandler ["HandleRating",{0}];
 ["CBA_loadingScreenDone", {
     if (!(didJIP) || {(didJIP && !(isNil "GRAD_USER_introOver"))}) then {
         [{time > (_this + 3)},{
-            //if (isNull (getAssignedCuratorLogic ace_player)) then {
+            if (isNull (getAssignedCuratorLogic ace_player)) then {
                 STHud_UIMode = 0;
-                ["Mediterranean", "EventTrack01_F_Jets"] call GRAD_USER_fnc_intro;
-            //};
+                if (isNil "grad_user_openWelldeck") then {
+                    grad_user_openWelldeck = true;
+                    publicVariable "grad_user_openWelldeck";
+                };
+                ["Mediterranean", "LeadTrack05_F_Tank"] call GRAD_USER_fnc_intro;
+            };
         },time] call CBA_fnc_waitUntilAndExecute;
     };
 }] call CBA_fnc_addEventHandler;
