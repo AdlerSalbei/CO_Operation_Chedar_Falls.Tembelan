@@ -1,3 +1,22 @@
-# COOP Template - Anleitung im [WIKI](https://github.com/gruppe-adler/CO_Template.VR/wiki)
+2019-07-01, Mo, COOP Operation Cheddar Falls
 
-Ziel dieser Vorlage ist es, eine standardisierte Plattform für unsere Coop Missionen zu bieten und dem Missionsersteller den Großteil der Voreinstellungsarbeit abzunehmen.
+### Kurz-Info
+
+COOP – NATO vs. 
+Map: Tembelan
+Medical System: ADVANCED
+Permadeath: AUS
+Loadouts: FEST
+Datum: 09.11.1979
+Uhrzeit: 07:34
+Wetter: bewölkt
+
+## Mission
+### Lage
+
+
+### Einsatzunterstützung
+
+
+### Map
+
