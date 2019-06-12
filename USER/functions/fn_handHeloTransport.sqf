@@ -1,4 +1,26 @@
 [{
+    params ["", "_handel"];
+
+    private _slingedObjects = 0;
+
+    {
+        if !(isNull (getSlingLoad _x)) then {
+            _slingedObjects = _slingedObjects +1;
+        };
+    }forEach [heloVehicle_1, heloVehicle_2, heloVehicle_3, heloVehicle_4];
+
+    if (_slingedObjects >= 4) exitWith {[_handel] call CBA_fnc_removePerFrameHandler;};
+
+    {
+        if !(velocity _x isEqualTo [0,0,0]) then {
+            _x setVelocity [0, 0, 0];
+        };
+    }forEach [boat_1, boat_2, boat_3, boat_4];
+
+},0.1,[]] call CBA_fnc_addPerFrameHandler;
+
+
+[{
     heloVehicle_1 setFuel 1;
 
     private _pos = getPosASL boat_1;
@@ -9,9 +31,7 @@
 
     [{
         params ["_wp"];
-        systemChat str _wp;
-        systemChat format ["%1 canSling %2 = %3", heloVehicle_1, boat_1, heloVehicle_1 canSlingLoad boat_1];
-        systemChat (waypointType _wp);
+
         if ((waypointType _wp) != "HOOK") then {
             _wp setWaypointType "HOOK";
         }else{
@@ -55,9 +75,7 @@
 
     [{
         params ["_wp"];
-        systemChat str _wp;
-        systemChat format ["%1 canSling %2 = %3", heloVehicle_2, boat_2, heloVehicle_2 canSlingLoad boat_2];
-        systemChat (waypointType _wp);
+
         if ((waypointType _wp) != "HOOK") then {
             _wp setWaypointType "HOOK";
         }else{
@@ -101,9 +119,7 @@
 
     [{
         params ["_wp"];
-        systemChat str _wp;
-        systemChat format ["%1 canSling %2 = %3", heloVehicle_3, boat_3, heloVehicle_3 canSlingLoad boat_3];
-        systemChat (waypointType _wp);
+
         if ((waypointType _wp) != "HOOK") then {
             _wp setWaypointType "HOOK";
         }else{
@@ -147,9 +163,7 @@
 
     [{
         params ["_wp"];
-        systemChat str _wp;
-        systemChat format ["%1 canSling %2 = %3", heloVehicle_4, boat_4, heloVehicle_4 canSlingLoad boat_4];
-        systemChat (waypointType _wp);
+
         if ((waypointType _wp) != "HOOK") then {
             _wp setWaypointType "HOOK";
         }else{
