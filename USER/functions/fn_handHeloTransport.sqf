@@ -12,8 +12,9 @@
     if (_slingedObjects >= 4) exitWith {[_handel] call CBA_fnc_removePerFrameHandler;};
 
     {
-        if !(velocity _x isEqualTo [0,0,0]) then {
-            _x setVelocity [0, 0, 0];
+        private _velocity = velocity _x;
+        if (_velocity select 0 > 0 || {_velocity select 1 > 0}) then {
+            _x setVelocity [0, 0, (_velocity select 2)];
         };
     }forEach [boat_1, boat_2, boat_3, boat_4];
 
