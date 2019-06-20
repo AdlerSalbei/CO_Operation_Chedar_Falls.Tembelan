@@ -7,5 +7,7 @@ class GRAD_USER {
     class common {
         file = "USER\functions";
         class intro {};
+        class handHeloTransport {};
+        class heloShow {};
     };
 };

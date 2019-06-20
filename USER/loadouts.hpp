@@ -21,7 +21,7 @@
 #define SUPPRESSORS
 
 loadoutFactionBlu = "SOGBLACK";
-loadoutFactionOpf = "";
+loadoutFactionOpf = "TembelanMilitary";
 loadoutFactionInd = "";
 
 // Achtung: grad-factions enthält derzeit keine Loadouts, die für Zivilisten funktionieren
