@@ -1,27 +1,4 @@
 [{
-    params ["", "_handel"];
-
-    private _slingedObjects = 0;
-
-    {
-        if !(isNull (getSlingLoad _x)) then {
-            _slingedObjects = _slingedObjects +1;
-        };
-    }forEach [heloVehicle_1, heloVehicle_2, heloVehicle_3, heloVehicle_4];
-
-    if (_slingedObjects >= 4) exitWith {[_handel] call CBA_fnc_removePerFrameHandler;};
-
-    {
-        private _velocity = velocity _x;
-        if (_velocity select 0 > 0 || {_velocity select 1 > 0}) then {
-            _x setVelocity [0, 0, (_velocity select 2)];
-        };
-    }forEach [boat_1, boat_2, boat_3, boat_4];
-
-},0.1,[]] call CBA_fnc_addPerFrameHandler;
-
-
-[{
     heloVehicle_1 setFuel 1;
 
     private _pos = getPosASL boat_1;

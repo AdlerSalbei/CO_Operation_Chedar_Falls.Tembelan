@@ -1,7 +1,7 @@
 params ["_effect", "_music"];
 [_effect, 0, false] call BIS_fnc_setPPeffectTemplate;
 
-playMusic [_music, 3];
+playMusic [_music, 5];
 
 cutText ["", "BLACK IN", 8];
 
