@@ -3,6 +3,7 @@
 [
     {!(isNil "grad_user_openWelldeck")},
     {
+        introVehicle_1 setFuel 1;
         private _lhdPart = nearestObjects [getPos lhd_1, ["ATLAS_LHD_7"], 200] select 0;
 
         _lhdPart animate ["door_welldeck", 1];
@@ -16,7 +17,7 @@
                 _this animate ["door_welldeck_3", 0];
             },
             _lhdPart,
-            30
+            90
         ] call CBA_fnc_waitAndExecute;
     },
     []
